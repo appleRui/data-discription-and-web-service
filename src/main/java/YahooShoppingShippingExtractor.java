@@ -3,13 +3,13 @@ import java.net.*;
 
 public class YahooShoppingShippingExtractor {
   public static void main(String[] args) {
+    URL url = null;
     try {
-      URL url = new URL("https://paypaymall.yahoo.co.jp/store/sunnapstore/item/cd-7db/?sc_i=shp_pc_top_history");
+      url = new URL("https://paypaymall.yahoo.co.jp/store/sunnapstore/item/cd-7db/?sc_i=shp_pc_top_history");
       Webpage page = new Webpage(url);
       page.printPostage();
-    }
-    catch(MalformedURLException e) {
-      System.err.println("Wrong URL: " + args[0]);
+    } catch (MalformedURLException e) {
+      System.err.println("Wrong URL: " + url);
     }
   }
 }
