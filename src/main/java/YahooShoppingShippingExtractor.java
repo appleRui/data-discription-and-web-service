@@ -15,7 +15,7 @@ public class YahooShoppingShippingExtractor {
 }
 
 class Webpage {
-  private URL url;
+  private URL url = null;
 
   Webpage(URL url) {
     this.url = url;
